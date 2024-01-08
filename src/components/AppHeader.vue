@@ -1,6 +1,10 @@
 <template lang="">
-    <section class="contacts"></section>
-    <section class="navigation"></section>
+    <section class="contacts">
+        <div class=container></div>
+    </section>
+    <section class="navigation">
+        <div class=container></div>
+    </section>
     <section class="jumbo"></section>
 </template>
 <script>
@@ -24,4 +28,12 @@ export default {
         height:500px;
         background-color: aqua;
     }
+
+    .container{
+            height: 100%;
+            width: 60%;
+            margin: 0 auto;
+            border: solid black 1px;
+        }
+
 </style>
