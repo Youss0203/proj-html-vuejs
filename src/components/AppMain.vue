@@ -121,7 +121,25 @@
         </div>
     </section>
     <section class="newsletter">
-        <div class="container"></div>
+        <div class="container">
+            <div class="content-news">
+            <h1>Joing Over <span>500,000 students</span> Enjoying Avada Education Now</h1>
+            <p>Become Part Of Avada University To Further Your Career.</p>
+            </div>
+            <div class="form d-flex">
+                <div class="box">
+                    <form placeholder="Name">Name </form>
+                </div>
+                <div class="box">
+                    <form placeholder="Name">Email </form>
+                </div>
+                <div class="box">
+                    <form placeholder="Name">Telephone</form>
+                </div>
+                <button>Apply Now</button>
+
+            </div>
+        </div>
     </section>
 </template>
 <script>
@@ -181,7 +199,7 @@ export default {
     }
     section.values{
         height: 300px;
-        
+        background-color: #f7f5f4;
 
         p{
             color:#7e8890;
@@ -319,8 +337,44 @@ export default {
     }
 
     section.newsletter{
-        height: 200px;
+
         background-color: #333c4e;
+
+        .content-news{
+            text-align: center;
+        }
+        h1{
+            color:#ffffff;
+            padding-top:3rem;
+        }
+        span{
+            color: #e58925;
+            text-decoration: underline;
+        }
+        p{
+            color:#7e8890;
+            margin-bottom:3rem;
+        }
+        .box{
+            padding:.5rem 10rem .5rem .3rem;
+            background-color: #444D63;
+            margin-right:1.5rem
+        }
+        form{
+            color:white;
+            
+        }
+        .form{
+            padding-bottom:5rem;
+        }
+
+        button{
+            padding:.5rem 2rem;
+            border:none;
+            color:white;
+            background-color: #e58925;
+        }
+        
     }
     .divider{
         width: 14%;
