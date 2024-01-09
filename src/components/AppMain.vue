@@ -74,7 +74,25 @@
         </div>
     </section>
     <section class="news">
-        <div class="container"></div>
+        <div class="container">
+            <div class="content-logo">
+                <img src="../../src/images/page-logo-1.png" alt="logo Avada">
+                <h1>Today's University News</h1>
+                <p>Covering topics from classes to politics and student organization events.</p>
+            </div>
+            <div class="divider"></div>
+            <div class="content-card">
+            <div class="card">
+                <img src="../../src/images/news_single_post_header_1-200x111.jpg" alt="">
+                <h1>What do successful grads think you should study?</h1>
+                <p>By <span>admin</span> | March 16th, 2016</p>
+                <div class="d-flex-bet">
+                    <p class="orange">Read more ></p>
+                    <p class="orange"><i class="fa-regular fa-comments"></i> 0</p>
+                </div>
+            </div>
+            </div>
+        </div>
     </section>
     <section class="newsletter">
         <div class="container"></div>
@@ -92,9 +110,6 @@ export default {
         margin:0 auto;
         border: solid black 1px;
     }
-    section.university{
-
-        margin-bottom:7rem;
         div.content-logo{
             text-align: center;
 
@@ -108,6 +123,10 @@ export default {
             }
 
         }
+    section.university{
+
+        margin-bottom:7rem;
+        
         .small{
             font-size:15px;
             margin-bottom:.5rem
@@ -214,7 +233,7 @@ export default {
             text-align: center;
             margin-bottom: 1rem;
             color:white;
-            padding-top:11rem;
+            padding-top:11rem; 
         }
         p{
             text-align: center;
@@ -227,8 +246,39 @@ export default {
     }
 
     section.news{
-        height: 400px;
-        background-color: yellow;
+
+        .content-logo{
+            padding-top:2rem;
+        }
+        background-color: #f7f5f4;
+        .content-card{
+            width: calc(100% / 3);
+
+            .card{
+                background-color: #ffffff;
+            }
+            img{
+                width: 100%;
+            }
+
+            h1{
+                color:#e58925;
+                font-size:20px;
+                margin-bottom:.5rem;
+            }
+
+            span{
+                color:#e58925;
+            }
+            .orange{
+                color:#e58925;
+            }
+
+            .d-flex-bet{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
     }
 
     section.newsletter{
