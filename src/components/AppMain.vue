@@ -37,7 +37,7 @@
                    learning packages may he right up your street.</p>
             </div>
             <div class="col-50">
-                <h1>OUR VALUES</h1>
+                <h1 class="p-left">OUR VALUES</h1>
                 <div class="square">  
                     <p><i class="fa-solid fa-plus"></i>OUR MISSION</p>
                 </div>
@@ -84,12 +84,38 @@
             <div class="content-card">
             <div class="card">
                 <img src="../../src/images/news_single_post_header_1-200x111.jpg" alt="">
+                <div class="pdg">
                 <h1>What do successful grads think you should study?</h1>
                 <p>By <span>admin</span> | March 16th, 2016</p>
                 <div class="d-flex-bet">
                     <p class="orange">Read more ></p>
                     <p class="orange"><i class="fa-regular fa-comments"></i> 0</p>
                 </div>
+            </div>
+            </div>
+
+            <div class="card centre">
+                <img src="../../src/images/news_single_post_header_2-200x111.jpg" alt="">
+                <div class="pdg">
+                <h1>What do successful grads think you should study?</h1>
+                <p>By <span>admin</span> | March 15th, 2016</p>
+                <div class="d-flex-bet">
+                    <p class="orange">Read more ></p>
+                    <p class="orange"><i class="fa-regular fa-comments"></i> 0</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="card">
+                <img src="../../src/images/news_single_post_header_3-200x111.jpg" alt="">
+                <div class="pdg">
+                <h1>What do successful grads think you should study?</h1>
+                <p>By <span>admin</span> | March 15th, 2016</p>
+                <div class="d-flex-bet">
+                    <p class="orange">Read more ></p>
+                    <p class="orange"><i class="fa-regular fa-comments"></i> 0</p>
+                </div>
+            </div>
             </div>
             </div>
         </div>
@@ -108,7 +134,6 @@ export default {
         height: 100%;
         width: 60%;
         margin:0 auto;
-        border: solid black 1px;
     }
         div.content-logo{
             text-align: center;
@@ -172,6 +197,9 @@ export default {
             font-size:15px;
             margin-bottom:1rem;
         }
+        .p-left{
+            padding-left: 1rem;
+        }
         ul{
             list-style-type: none;
 
@@ -189,12 +217,10 @@ export default {
                 margin-bottom: 1.5rem;
             }
         }
-
         .square{
             background-color: white;
             padding:.5rem 5rem 1.5rem 1rem;
             height:20px;
-            border:1px solid;
             margin-bottom:1rem;
 
             p{
@@ -215,7 +241,6 @@ export default {
         div.box{
         width: calc(100% / 3);
         height: 400px;
-        border: solid 1px black;
         }
         .box-1{
             background-image: url(../../src/images/home_courses_section_bg.jpg);
@@ -247,24 +272,32 @@ export default {
 
     section.news{
 
+        padding-bottom: 3rem;
         .content-logo{
             padding-top:2rem;
         }
         background-color: #f7f5f4;
         .content-card{
-            width: calc(100% / 3);
+            display: flex;
 
+            .centre{
+                margin:0 2rem;
+            }
             .card{
                 background-color: #ffffff;
             }
             img{
                 width: 100%;
+                margin-bottom: 1rem;
             }
 
             h1{
                 color:#e58925;
-                font-size:20px;
+                font-size:17px;
                 margin-bottom:.5rem;
+            }
+            p{
+                margin-bottom: 2rem;
             }
 
             span{
@@ -272,11 +305,15 @@ export default {
             }
             .orange{
                 color:#e58925;
+                margin-bottom: 1rem;
             }
 
             .d-flex-bet{
                 display: flex;
                 justify-content: space-between;
+            }
+            .pdg{
+                padding: 1rem;
             }
         }
     }
