@@ -133,6 +133,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-bottom:3rem;
 
         .jumbo-title{
             text-align: center;
