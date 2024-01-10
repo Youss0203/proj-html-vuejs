@@ -18,7 +18,7 @@
                 </p>
             </div>
             <div class="columns">
-                <img class="image-content" src="../../src/images/fss-demo-main.jpg" alt="">
+                <img src="../../src/images/business_seminar_event_feat-400x268.jpg" alt="">
             </div>
         </div>
         </div>
@@ -198,7 +198,7 @@ export default {
         }
     }
     section.values{
-        height: 300px;
+        padding:4rem 0;
         background-color: #f7f5f4;
 
         p{
