@@ -72,7 +72,25 @@
         </div>
     </section>
     <section class="contacts">
-
+        <div class=d-flex-between>
+            <div class="rights">
+                <ul>
+                    <li class="p-left">© Theme Fusion   |</li>
+                    <li>All Rights Deserved    |</li>
+                    <li>Powered by WordPres    |</li>
+                    <li>support@theme-fusion.com    |</li>
+                    <li>1.800.555.6789</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li class="socials"><i class="fa-brands fa-instagram"></i></li>
+            </ul>
+            </div>
+        </div>
     </section>
 </template>
 <script>
@@ -166,6 +184,7 @@ section.upper {
     display: flex;
     background-image: url(../../src/images/university_ft_bg.png);
     background-size: 100%;
+    padding-bottom: 5rem;
 
     .column {
         width: 20%;
@@ -255,6 +274,26 @@ section.upper {
 }
 
 section.contacts {
-    height: 50px;
     border-top: 1px solid #7e8890;
+    .d-flex-between{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    ul{
+        list-style-type: none;
+        display: flex;
+
+        li{
+            color:#7e8890;
+            font-size: 13px;
+            padding:2rem .5rem;
+        }
+        .p-left{
+            padding-left: 5rem;
+        }
+        .socials{
+            padding-right: 5rem;
+        }
+    }
 }</style>
